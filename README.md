@@ -31,7 +31,10 @@ The app currently uses mock data so it works without any setup. To use the live 
 
 ## 🚀 Live Demo
 
-🟢 https://arjundroid12.github.io/movie-explorer/
+| Host | URL | Notes |
+|------|-----|-------|
+| 🥇 Surge.sh | https://arjun-movies.surge.sh | Bangalore edge — best for India |
+| 🥈 GitHub Pages | https://arjundroid12.github.io/movie-explorer/ | May be blocked by some Indian ISPs |
 
 ## 📦 Run Locally
 
