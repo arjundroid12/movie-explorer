@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Explorer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<main class="app">
+  <header class="app__header">
+    <h1>🎬 Movie Explorer</h1>
+    <button id="themeToggle" class="icon-btn" type="button">🌙</button>
+  </header>
+
+  <div class="controls">
+    <input id="searchInput" type="search" placeholder="Search movies...">
+    <select id="genreFilter">
+      <option value="">All genres</option>
+    </select>
+    <select id="sortBy">
+      <option value="rating">Sort: Rating ↓</option>
+      <option value="title">Sort: Title A-Z</option>
+      <option value="year">Sort: Year ↓</option>
+    </select>
+  </div>
+
+  <div id="trending" class="section">
+    <h2>🔥 Trending Now</h2>
+    <div class="movie-row" id="trendingRow"></div>
+  </div>
+
+  <div id="results" class="section">
+    <h2 id="resultsTitle">All Movies</h2>
+    <div class="movie-grid" id="movieGrid"></div>
+  </div>
+
+  <div id="favorites" class="section">
+    <h2>⭐ Your Favorites</h2>
+    <div class="movie-grid" id="favGrid"></div>
+  </div>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal__overlay" data-close></div>
+    <div class="modal__content">
+      <button class="modal__close" data-close>×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+</main>
+<script src="./assets/movies.js"></script>
+<script src="./assets/app.js"></script>
+</body>
+</html>
